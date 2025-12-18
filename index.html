@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Mesfin Kebede | Data Scientist</title>
-  <meta name="description" content="Mesfin Kebede – Data Science, Machine Learning, NLP, Python, SQL">
+  <title>Mesfin Kebede | Portfolio</title>
+  <meta name="description" content="Mesfin Kebede — Data Science, Machine Learning, NLP, Python, SQL, Java, Spring Boot, SQLite">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
 <body>
 
 <header class="container header">
-  <div class="logo">MK</div>
-  <nav>
+  <a class="logo" href="#top">MK</a>
+  <nav class="nav">
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#about">About</a>
@@ -24,147 +24,195 @@
   </nav>
 </header>
 
-<section class="hero container">
-  <div>
-    <p class="pill">Data Science • Machine Learning • NLP</p>
-    <h1>Hi, I’m <span class="accent">Mesfin Kebede</span></h1>
-    <p class="sub">
-      Data Scientist with strong Python, SQL, Machine Learning, and NLP experience.
-      I build end-to-end data solutions with real business impact.
-    </p>
+<main id="top">
+  <section class="hero container">
+    <div class="hero-left">
+      <p class="pill">Data Science • Machine Learning • NLP • Python • SQL • Java • Spring Boot</p>
+      <h1>Hi, I’m <span class="accent">Mesfin Kebede</span>.</h1>
+      <p class="sub">
+        I build end-to-end projects in Data Science and Software Engineering — from data wrangling and ML,
+        to APIs and database-backed applications.
+      </p>
 
-    <div class="cta">
-      <a class="btn" href="#projects">View Projects</a>
-      <a class="btn ghost" href="https://github.com/mesfin-k" target="_blank">GitHub</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank">LinkedIn</a>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="https://github.com/mesfin-k" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">Capstones</div>
+          <div class="stat-label">DS + NLP</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Spring</div>
+          <div class="stat-label">REST APIs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">SQLite</div>
+          <div class="stat-label">Persistence</div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="container section">
-  <h2>Projects</h2>
+    <div class="hero-right card">
+      <h3>Featured</h3>
+      <p class="muted">Capstone 3 — NLP (Fake News / Text Classification).</p>
+      <div class="tags">
+        <span class="tag">NLP</span>
+        <span class="tag">Python</span>
+        <span class="tag">Modeling</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn small" href="https://github.com/mesfin-k/capstone-three" target="_blank" rel="noopener">Repo</a>
+        <a class="btn small ghost" href="#projects">All projects</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="grid">
+  <section id="projects" class="container section">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="muted">Selected projects with GitHub links.</p>
+    </div>
 
+    <div class="grid">
+      <article class="card project">
+        <h3>Capstone 3 — NLP (Fake News / Text Classification)</h3>
+        <p class="muted">
+          Built an NLP pipeline for text classification (preprocessing, vectorization, modeling, evaluation).
+        </p>
+        <div class="tags">
+          <span class="tag">NLP</span><span class="tag">TF-IDF</span><span class="tag">Classification</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/capstone-three" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Capstone 2 — Fraud Detection (PaySim)</h3>
+        <p class="muted">
+          EDA + cleaning + feature engineering + ML modeling with precision/recall focus.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/capstone-two" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Spring Boot — Social Media Blog API</h3>
+        <p class="muted">
+          REST API with account registration/login and message endpoints (CRUD), built with Spring Boot.
+        </p>
+        <div class="tags">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST API</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/mesfin-k-pep-spring-project" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Customer Account Transaction System (CATS)</h3>
+        <p class="muted">
+          Java application implementing customer accounts and transaction operations using SQLite for persistence.
+        </p>
+        <div class="tags">
+          <span class="tag">Java</span><span class="tag">SQLite</span><span class="tag">OOP</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/Customer_Account_Transaction_System_CATS" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Flight Delay Prediction</h3>
+        <p class="muted">ML prediction pipeline with Bayesian Optimization for hyperparameter tuning.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">ML</span><span class="tag">Optimization</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/flight-delay-bayesian-opt" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h3>Customer Segmentation</h3>
+        <p class="muted">Compared clustering algorithms with evaluation metrics.</p>
+        <div class="tags">
+          <span class="tag">Clustering</span><span class="tag">Unsupervised</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/mesfin-k/clustering-customer-segmentation" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="container section">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="muted">Tools I use often.</p>
+    </div>
+
+    <div class="grid skills">
+      <div class="card">
+        <h3>Data</h3>
+        <ul>
+          <li>Python (Pandas, NumPy)</li>
+          <li>EDA, cleaning, feature engineering</li>
+          <li>Visualization (Matplotlib)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>ML / NLP</h3>
+        <ul>
+          <li>Scikit-learn</li>
+          <li>Model evaluation</li>
+          <li>NLP pipelines (vectorization, classification)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <ul>
+          <li>Java + Spring Boot</li>
+          <li>REST APIs</li>
+          <li>SQLite / SQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container section">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
     <div class="card">
-      <h3>Fraud Detection – PaySim (Capstone)</h3>
       <p>
-        Built a fraud detection system using transaction data. Performed EDA,
-        feature engineering, and trained ML models with precision/recall focus.
+        I build practical, portfolio-quality projects that map to real job requirements.
+        I like clean code, measurable results, and strong fundamentals.
       </p>
-      <p class="tags">
-        <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
-      </p>
-      <a class="btn small" href="https://github.com/mesfin-k/capstone-two" target="_blank">GitHub</a>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Flight Delay Prediction</h3>
-      <p>
-        Predicted flight delays using machine learning and Bayesian Optimization
-        for hyperparameter tuning.
-      </p>
-      <p class="tags">
-        <span>ML</span><span>Bayesian Opt</span><span>Python</span>
-      </p>
-      <a class="btn small" href="https://github.com/mesfin-k/flight-delay-bayesian-opt" target="_blank">GitHub</a>
+  <section id="contact" class="container section">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p class="muted">Let’s connect.</p>
     </div>
-
-    <div class="card">
-      <h3>Customer Segmentation</h3>
-      <p>
-        Compared clustering algorithms (DBSCAN, Agglomerative, Spectral)
-        using Silhouette Score and ARI.
-      </p>
-      <p class="tags">
-        <span>Clustering</span><span>Unsupervised</span>
-      </p>
-      <a class="btn small" href="https://github.com/mesfin-k/clustering-customer-segmentation" target="_blank">GitHub</a>
+    <div class="card contact">
+      <a class="btn" href="mailto:mesfin.k.kebede@gmail.com">Email</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/mesfin-k" target="_blank" rel="noopener">GitHub</a>
     </div>
-
-    <div class="card">
-      <h3>Fake News Detection (NLP)</h3>
-      <p>
-        Built NLP pipelines for text classification using TF-IDF, preprocessing,
-        and supervised learning models.
-      </p>
-      <p class="tags">
-        <span>NLP</span><span>TF-IDF</span><span>Text Classification</span>
-      </p>
-      <a class="btn small" href="https://github.com/mesfin-k" target="_blank">GitHub</a>
-    </div>
-
-    <div class="card">
-      <h3>Titanic Survival Prediction</h3>
-      <p>
-        Gradient Boosting model with feature engineering and performance evaluation.
-      </p>
-      <p class="tags">
-        <span>Gradient Boosting</span><span>ML</span>
-      </p>
-      <a class="btn small" href="https://github.com/mesfin-k/titanic-gradient-boosting" target="_blank">GitHub</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="container section">
-  <h2>Skills</h2>
-  <div class="grid">
-
-    <div class="card">
-      <h3>Programming</h3>
-      <ul>
-        <li>Python</li>
-        <li>SQL</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Data Science</h3>
-      <ul>
-        <li>Pandas, NumPy</li>
-        <li>EDA & Feature Engineering</li>
-        <li>Model Evaluation</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Machine Learning & NLP</h3>
-      <ul>
-        <li>Scikit-learn</li>
-        <li>Clustering</li>
-        <li>NLP, TF-IDF, Text Classification</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="container section">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I have a strong background in Data Science, IT, and Systems Administration.
-      I enjoy solving complex problems using data and building models that drive
-      real-world decisions.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="container section">
-  <h2>Contact</h2>
-  <div class="cta">
-    <a class="btn" href="mailto:mesfin.k.kebede@gmail.com">Email</a>
-    <a class="btn ghost" href="https://github.com/mesfin-k" target="_blank">GitHub</a>
-    <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank">LinkedIn</a>
-  </div>
-  <p class="footer">© <span id="year"></span> Mesfin Kebede</p>
-</section>
+    <p class="footer muted">© <span id="year"></span> Mesfin Kebede</p>
+  </section>
+</main>
 
 <script src="script.js"></script>
 </body>
