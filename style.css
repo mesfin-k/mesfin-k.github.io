@@ -147,6 +147,10 @@ h1{font-size:48px;line-height:1.05;margin:0 0 16px;font-weight:800}
   border-radius:10px;
   font-size:14px;
 }
+.project-card:hover .tag {
+  background: var(--primary);
+  color: white;
+}
 
 .cta{
   display:flex;
