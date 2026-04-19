@@ -1,241 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Mesfin Kebede | Portfolio</title>
-  <meta name="description" content="Mesfin Kebede — Data Science, Machine Learning, NLP, Python, SQL, Java, Spring Boot, SQLite">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesfin Kebede | Data Scientist & Software Engineer</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #1f2937;
+      --light: #f8fafc;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+    h1 { font-size: 3rem; margin-bottom: 10px; }
+    .tagline {
+      font-size: 1.3rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: var(--dark);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .project-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      background: white;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      border-color: var(--primary);
+    }
+    .project-card h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+    .tag {
+      background: #eff6ff;
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    .btn:hover { background: #1e40af; }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .skill {
+      background: #f1f5f9;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 
-<header class="container header">
-  <a class="logo" href="#top">MK</a>
-  <nav class="nav">
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="btn small">Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>Mesfin Kebede</h1>
+    <p class="tagline">Data Scientist & Software Engineer<br>
+    Building end-to-end data solutions and scalable backend systems</p>
+  </header>
 
-<main id="top">
-  <section class="hero container">
-    <div class="hero-left">
-      <p class="pill">Data Science • Machine Learning • NLP • Python • SQL • Java • Spring Boot</p>
-      <h1>Hi, I’m <span class="accent">Mesfin Kebede</span>.</h1>
-      <p class="sub">
-        I build end-to-end projects in Data Science and Software Engineering — from data wrangling and ML,
-        to APIs and database-backed applications.
-      </p>
+  <div class="section">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto; font-size:1.1rem;">
+      I create practical, production-ready projects in <strong>Data Science, Machine Learning, NLP</strong>, and <strong>Backend Development</strong>.<br><br>
+      Open to full-time opportunities in Data Science, ML Engineering, or Software Engineering roles.
+    </p>
+  </div>
 
-      <p class="sub accent" style="font-weight:600;margin:24px 0;">
-        Open to full-time opportunities in Data Science, Machine Learning, or Software Engineering.
-      </p>
+  <div class="section" style="background:#f8fafc;">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
 
-      <div class="cta">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn ghost" href="https://github.com/mesfin-k" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-num">6+</div>
-          <div class="stat-label">Portfolio Projects</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">Python</div>
-          <div class="stat-label">Data & ML Focus</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">Java</div>
-          <div class="stat-label">Backend & APIs</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-right card">
-      <h3>Featured Project</h3>
-      <p class="muted">Capstone 3 — NLP (Fake News / Text Classification).</p>
-      <div class="tags">
-        <span class="tag">NLP</span>
-        <span class="tag">Python</span>
-        <span class="tag">Modeling</span>
-      </div>
-      <div class="card-actions">
-        <a class="btn small" href="https://github.com/mesfin-k/capstone-three" target="_blank" rel="noopener">Repo</a>
-        <a class="btn small ghost" href="#projects">All Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="container section">
-    <div class="section-head">
-      <h2>Projects</h2>
-      <p class="muted">Selected projects with GitHub links.</p>
-    </div>
-
-    <div class="grid">
-      <article class="card project">
-        <h3>Capstone 3 — NLP (Fake News / Text Classification)</h3>
-        <p class="muted">
-          Built an NLP pipeline for text classification (preprocessing, vectorization, modeling, evaluation).
-        </p>
+      <div class="project-card">
+        <h3>Capstone 3 — Fake News Detection (NLP)</h3>
+        <p>Built an NLP pipeline using TF-IDF for text classification with high accuracy.</p>
         <div class="tags">
+          <span class="tag">Python</span>
           <span class="tag">NLP</span>
-          <span class="tag">TF-IDF</span>
-          <span class="tag">Classification</span>
+          <span class="tag">Scikit-learn</span>
         </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/capstone-three" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
+        <a href="https://github.com/mesfin-k/capstone-three" class="btn" target="_blank">View Project →</a>
+      </div>
 
-      <article class="card project">
+      <div class="project-card">
         <h3>Capstone 2 — Fraud Detection (PaySim)</h3>
-        <p class="muted">
-          EDA + cleaning + feature engineering + ML modeling with precision/recall focus.
-        </p>
+        <p>End-to-end ML model with EDA, feature engineering, and strong precision/recall focus.</p>
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">Pandas</span>
           <span class="tag">Scikit-learn</span>
         </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/capstone-two" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
+        <a href="https://github.com/mesfin-k/capstone-two" class="btn" target="_blank">View Project →</a>
+      </div>
 
-      <article class="card project">
-        <h3>Spring Boot — Social Media Blog API</h3>
-        <p class="muted">
-          REST API with account registration/login and message endpoints (CRUD), built with Spring Boot.
-        </p>
+      <div class="project-card">
+        <h3>Social Media Blog API</h3>
+        <p>RESTful backend with CRUD operations, authentication using Spring Boot.</p>
         <div class="tags">
           <span class="tag">Java</span>
           <span class="tag">Spring Boot</span>
           <span class="tag">REST API</span>
         </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/mesfin-k-pep-spring-project" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-
-      <article class="card project">
-        <h3>Customer Account Transaction System (CATS)</h3>
-        <p class="muted">
-          Java application implementing customer accounts and transaction operations using SQLite for persistence.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">PHP</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">OOP</span>
-        </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/Customer_Account_Transaction_System_CATS" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-
-      <article class="card project">
-        <h3>Flight Delay Prediction</h3>
-        <p class="muted">ML prediction pipeline with Bayesian Optimization for hyperparameter tuning.</p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">ML</span>
-          <span class="tag">Optimization</span>
-        </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/flight-delay-bayesian-opt" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-
-      <article class="card project">
-        <h3>Customer Segmentation</h3>
-        <p class="muted">Compared clustering algorithms with evaluation metrics.</p>
-        <div class="tags">
-          <span class="tag">Clustering</span>
-          <span class="tag">Unsupervised</span>
-        </div>
-        <div class="card-actions">
-          <a class="btn small" href="https://github.com/mesfin-k/clustering-customer-segmentation" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="skills" class="container section">
-    <div class="section-head">
-      <h2>Skills</h2>
-      <p class="muted">Tools I use often.</p>
-    </div>
-
-    <div class="grid skills">
-      <div class="card">
-        <h3>Data</h3>
-        <ul>
-          <li>Python (Pandas, NumPy)</li>
-          <li>EDA, cleaning, feature engineering</li>
-          <li>Visualization (Matplotlib, Seaborn)</li>
-        </ul>
+        <a href="https://github.com/mesfin-k/mesfin-k-pep-spring-project" class="btn" target="_blank">View Project →</a>
       </div>
-      <div class="card">
-        <h3>ML / NLP</h3>
-        <ul>
-          <li>Scikit-learn</li>
-          <li>Model evaluation & tuning</li>
-          <li>NLP pipelines (vectorization, classification)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Backend</h3>
-        <ul>
-          <li>Java + Spring Boot</li>
-          <li>REST APIs</li>
-          <li>SQLite / SQL</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="container section">
-    <div class="section-head">
-      <h2>About</h2>
     </div>
-    <div class="card">
-      <p>
-        I build practical, portfolio-quality projects that map to real job requirements.
-        I like clean code, measurable results, and strong fundamentals.
-      </p>
-      <p style="margin-top:16px;">
-        Currently seeking full-time roles where I can contribute to data-driven products and backend systems.
-      </p>
-    </div>
-  </section>
+    <p style="text-align:center; margin-top:40px;">
+      <a href="https://github.com/mesfin-k?tab=repositories" class="btn" style="background:#334155;" target="_blank">
+        See All 6+ Projects on GitHub
+      </a>
+    </p>
+  </div>
 
-  <section id="contact" class="container section">
-    <div class="section-head">
-      <h2>Contact</h2>
-      <p class="muted">Let’s connect.</p>
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">Pandas • NumPy</span>
+      <span class="skill">Scikit-learn</span>
+      <span class="skill">NLP & Text Classification</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Java</span>
+      <span class="skill">Spring Boot</span>
+      <span class="skill">REST APIs</span>
+      <span class="skill">Matplotlib • Seaborn</span>
+      <span class="skill">Machine Learning Pipelines</span>
     </div>
-    <div class="card contact">
-      <a class="btn" href="mailto:mesfin.k.kebede@gmail.com">Email</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/mesfin-kebede/" target="_blank" rel="noopener">  LinkedIn</a>
-    </div>  
-    <p class="footer muted">© <span id="year"></span> Mesfin Kebede | <span class="email-text">mesfin.k.kebede@gmail.com</span></p>
-  </section>
-</main>
+  </div>
 
-<script src="script.js"></script>
+  <footer>
+    <p><strong>Mesfin Kebede</strong> • Union City, CA</p>
+    <p>
+      <a href="mailto:mesfin.k.kebede@gmail.com">mesfin.k.kebede@gmail.com</a> • 
+      Phone: (510) 925-8476
+    </p>
+    <p style="margin-top:20px;">
+      <a href="https://github.com/mesfin-k" target="_blank">GitHub</a> • 
+      LinkedIn (coming soon)
+    </p>
+    <p style="margin-top:30px; opacity:0.7; font-size:0.9rem;">© 2026 Mesfin Kebede. Built for hiring managers.</p>
+  </footer>
+
 </body>
-
 </html>
-
-
-
